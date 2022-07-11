@@ -1,0 +1,162 @@
+body {
+    /* background: linear-gradient(216deg, #8edfaa, #99d5e6); */
+    background-color: #8edfc5;
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 60%}
+    50%{background-position:100% 41%}
+    100%{background-position:0% 60%}
+}
+.player {
+    width: 300px;
+    min-height: 100px;
+    box-shadow: 2px 2px 12px -7px black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.but {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
+p.name {
+    font-family: fantasy;
+    margin: 5px;
+}
+.img {
+    transition-duration: calc(1s / 2);
+    width: 200px;
+    opacity: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5% 5% 0 0;
+}
+.img.sh {
+    transition-duration: calc(1s / 2);
+    margin-top: -210px;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
+.img.sh:hover .timeLine {
+    background-color: #8888;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    height: 10px;
+    margin-top: 190px;
+}
+.timeLine {
+    transition-duration: 0.1s;
+    height: 2px;
+    background-image: linear-gradient(90deg, #ffffff00 100%, #ffffff00 100%);
+    width: -webkit-fill-available;
+    margin: 5px auto;
+    position: absolute;
+    margin-top: 198px;
+}
+.img.sh:hover .canvas {
+    display: block !important;
+}
+canvas {
+    width: inherit;
+    height: inherit;
+    /* display: none; */
+    position: absolute;
+    margin-top: 1px;
+}
+
+.player:hover .vol {
+    transition-duration: calc(1s / 2);
+    margin-left: 340px;
+    opacity: 1;
+    width: 30px;
+}
+.vol {
+    transition-duration: calc(1s / 2);
+    position: absolute;
+    margin-left: 315px;
+    opacity: 0.5;
+    overflow: hidden;
+    height: -webkit-fill-available;
+    background: #fff5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10px;
+    /* background-size: cover; */
+}
+/* .volUp, .volDown {
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    opacity: 0.3;
+    margin: 3px;
+}
+.volUp:hover, .volDown:hover {
+    opacity: 0.8;
+} */
+
+
+/*
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+*/
+
+.word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #b2b2b2, 2px 4px #b2b2b2, 3px 5px #b2b2b2;
+    text-align: center;
+    opacity: 0.5;
+}
