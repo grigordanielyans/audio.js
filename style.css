@@ -119,7 +119,7 @@ canvas {
     margin-left: 315px;
     opacity: 0.5;
     overflow: hidden;
-    height: -webkit-fill-available;
+    height: 100px;
     background: #fff5;
     display: flex;
     flex-direction: column;
