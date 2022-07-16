@@ -155,6 +155,10 @@ player.play.onclick = function () {
 
 window.onload = function () {
   //   playSong();
+  player.vol.style.backgroundImage =
+    "linear-gradient(0deg, black " +
+    parseInt(song.volume * 100) +
+    "%, #ffffff00 0%)";
 };
 
 function timeLineMove(e) {
